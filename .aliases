@@ -1,6 +1,7 @@
 # Python
-alias py="python"
-alias venv="python -m venv .venv && source .venv/bin/activate"
+alias py="python3"
+alias python="python3"
+alias venv="python3 -m venv .venv && source .venv/bin/activate"
 alias pybuild="rm -rf build dist && python setup.py py2app -A"
 alias pytree="tree -I '__pycache__|dist|build|.git|.DS_Store|.venv' -a"
 
