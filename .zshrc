@@ -99,8 +99,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-if [ -f .aliases ]; then
-    source .aliases
+if [ -f ~/.aliases ]; then
+    source ~/.aliases
 fi
 
 function ref() {
