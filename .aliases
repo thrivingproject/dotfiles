@@ -1,15 +1,15 @@
 # Python
 alias py="python3"
-alias python="python3"
 alias venv="python3 -m venv .venv && source .venv/bin/activate"
+alias venvi="python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt"
 alias pybuild="rm -rf build dist && python setup.py py2app -A"
 alias pytree="tree -I '__pycache__|dist|build|.git|.DS_Store|.venv' -a"
 
 # Django
 alias django='django-admin startproject'
-alias djserv='python3 manage.py runserver'
-alias djmake='python3 manage.py makemigrations'
-alias djmigrate='python3 manage.py migrate'
+alias runserver='python3 manage.py runserver'
+alias makemigrations='python3 manage.py makemigrations'
+alias migrate='python3 manage.py migrate'
 
 # Other
 alias aliases="code ~/.aliases"

@@ -103,21 +103,7 @@ if [ -f ~/.aliases ]; then
     source ~/.aliases
 fi
 
-function ref() {
-    # Check if the argument is empty
-    if [ -z "$1" ]; then
-        echo "Usage: ref <file>"
-        ls "$HOME/reference"
-        return 1
-    fi
-
-    # Check if the file exists
-    if [ ! -f "$HOME/reference/$1.sh" ]; then
-        echo "File '$1' does not exist"
-        ls "$HOME/reference"
-        return 1
-    fi
-
-    code "$HOME/reference/$1.sh"
-
-}
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
