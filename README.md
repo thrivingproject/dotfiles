@@ -14,7 +14,7 @@ cd dotfiles
 
 ## Local VSCode devcontainer
 
-Modify VSCode Dotfiles settings so that when a devcontainer is created it will use the dotfiles in this repo. Make sure use `install-local.sh` as the value for the install command field.
+Modify VSCode Dotfiles settings so that when a devcontainer is created it will use the dotfiles in this repo. Make sure use `install-local.sh` as the value for the install command field. These settings are not synced which means settings sync can still be used with codespaces without interfering with codespaces dotfiles setup.
 
 See [VSCode devcontainer docs](https://code.visualstudio.com/docs/devcontainers/containers#_personalizing-with-dotfile-repositories) for more information.
 
