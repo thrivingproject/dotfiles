@@ -4,9 +4,9 @@ alias venv="python3 -m venv .venv && source .venv/bin/activate"
 alias venvi="python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt"
 alias pybuild="rm -rf build dist && python setup.py py2app -A"
 alias pytree="tree -I '__pycache__|dist|build|.git|.DS_Store|.venv' -a"
+alias freeze="pip freeze > requirements.txt"
 
 # Django
-alias django='django-admin startproject'
 alias runserver='python3 manage.py runserver'
 alias makemigrations='python3 manage.py makemigrations'
 alias migrate='python3 manage.py migrate'
@@ -18,4 +18,6 @@ alias ls="ls -G"
 alias path="echo $PATH | tr ':' '\n'"
 alias zshrc="code ~/.zshrc"
 alias variables="printenv"
-alias ghd="gh repo delete"
+alias ghrd="gh repo delete"
+alias dev="code ~/dev"
+alias devr="dev -r"
