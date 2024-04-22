@@ -8,7 +8,7 @@ Clone this repo and run the `setup.sh` script.
 
 ```bash
 git clone
-cd dotfiles
+cd .dotfiles
 ./local-install.sh
 ```
 

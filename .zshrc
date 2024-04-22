@@ -110,3 +110,12 @@ if command -v pyenv 1>/dev/null 2>&1; then
     command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
     eval "$(pyenv init -)"
 fi
+
+function dev() {
+    if [ -z "$1" ]; then
+        echo "Usage: dev <project-name>"
+        return 1
+    fi
+
+    code ~/dev/$1
+}
