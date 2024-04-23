@@ -5,6 +5,7 @@ alias venvi="python3 -m venv .venv && source .venv/bin/activate && pip install -
 alias pybuild="rm -rf build dist && python setup.py py2app -A"
 alias pytree="tree -I '__pycache__|dist|build|.git|.DS_Store|.venv' -a"
 alias freeze="pip freeze > requirements.txt"
+alias chatgpt="openai api chat.completions.create -m gpt-4 --message user"
 
 # Django
 alias runserver='python3 manage.py runserver'
@@ -12,12 +13,13 @@ alias makemigrations='python3 manage.py makemigrations'
 alias migrate='python3 manage.py migrate'
 
 # Other
-alias aliases="code ~/.aliases"
-alias zprofile="code ~/.zprofile"
 alias ls="ls -G"
 alias path="echo $PATH | tr ':' '\n'"
-alias zshrc="code ~/.zshrc"
-alias variables="printenv"
 alias ghrd="gh repo delete"
-alias dofiles="code ~/.dotfiles"
-alias chatgpt="openai api chat.completions.create -m gpt-4 --message user"
+alias apikey="echo $OPENAI_API_KEY | pbcopy"
+
+# code
+alias dotfiles="code ~/.dotfiles"
+alias zshrc="code ~/.zshrc"
+alias zprofile="code ~/.zprofile"
+alias aliases="code ~/.aliases"
