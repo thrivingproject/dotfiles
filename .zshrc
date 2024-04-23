@@ -111,11 +111,7 @@ if command -v pyenv 1>/dev/null 2>&1; then
     eval "$(pyenv init -)"
 fi
 
-function dev() {
-    if [ -z "$1" ]; then
-        echo "Usage: dev <project-name>"
-        return 1
-    fi
-
-    code ~/dev/$1
-}
+# Secrets
+if [ -f ~/.secrets ]; then
+    source ~/.secrets
+fi
