@@ -18,10 +18,10 @@ Save these in `~/.secrets`. `.zshrc` will source this file if it exists. Do not 
 
 ## Setup
 
-Do this when setting up a new computer.
+Do this when setting up a new computer:
 
 ```bash
-git clone thrivingproject/dotfiles ~/.dotfiles
+gh repo clone thrivingproject/dotfiles ~/.dotfiles
 cd .dotfiles
 ./local-install.sh
 ```
