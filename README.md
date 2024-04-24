@@ -14,13 +14,19 @@ See [GitHub codespaces docs](https://docs.github.com/en/codespaces/setting-your-
 
 ## Environment variables, API Keys, secrets
 
-### Local
+### Using local environment variables in devcontainers
 
 Export to environment in `.zprofile`. This is safe because `.zprofile` is not a part of this repository. Then add the `containerEnv` property to `devcontainer.json` per [advanced container docs](https://code.visualstudio.com/remote/advancedcontainers/environment-variables).
 
-### Codespaces
+### Using secrets in codespaces
 
-Use the *secrets* tool in codespaces settings.
+Use the [secrets](https://docs.github.com/en/codespaces/managing-your-codespaces/managing-your-account-specific-secrets-for-github-codespaces) tool in codespaces settings.
+
+## Git
+
+Account configuration (credentials) is only needed when using devcontainers locally. [Dev Containers will automatically copy local `.gitignore` to the container](https://code.visualstudio.com/remote/advancedcontainers/sharing-git-credentials). `gitignore_global` is included and installed by this repo.
+
+*Note: no `git config` command should be executed from the install script, because this will create a `.gitconfig` file in the home directory, which will cause devcontainers to skip copying the local `.gitignore` file to the container (see the **dev.containers.copyGitConfig** setting in VS Code).*
 
 ## Setup
 
