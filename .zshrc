@@ -112,6 +112,6 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 # Secrets
-if [ -f ~/.secrets ]; then
-    source ~/.secrets
-fi
+# if [ -f ~/.secrets ]; then
+#     source ~/.secrets
+# fi

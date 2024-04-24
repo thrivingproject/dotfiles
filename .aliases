@@ -5,7 +5,7 @@ alias venvi="python3 -m venv .venv && source .venv/bin/activate && pip install -
 alias pybuild="rm -rf build dist && python setup.py py2app -A"
 alias pytree="tree -I '__pycache__|dist|build|.git|.DS_Store|.venv' -a"
 alias freeze="pip freeze > requirements.txt"
-alias chatgpt="openai api chat.completions.create -m gpt-4 --message user"
+alias cgt="openai api chat.completions.create -m gpt-4 --message user"
 
 # Django
 alias runserver='python3 manage.py runserver'
