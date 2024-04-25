@@ -5,7 +5,7 @@ alias venvi="python3 -m venv .venv && source .venv/bin/activate && pip install -
 alias pybuild="rm -rf build dist && python setup.py py2app -A"
 alias pytree="tree -I '__pycache__|dist|build|.git|.DS_Store|.venv' -a"
 alias freeze="pip freeze > requirements.txt"
-alias cgt="openai api chat.completions.create -m gpt-4 --message user"
+alias cgpt="openai api chat.completions.create --stream -m gpt-4 --message user"
 
 # Django
 alias runserver='python3 manage.py runserver'
@@ -17,9 +17,9 @@ alias ls="ls -G"
 alias path="echo $PATH | tr ':' '\n'"
 alias ghrd="gh repo delete"
 alias apikey="echo $OPENAI_API_KEY | pbcopy"
+alias brave="open /Applications/Brave\ Browser.app"
 
 # code
 alias dotfiles="code ~/.dotfiles"
-alias zshrc="code ~/.zshrc"
-alias zprofile="code ~/.zprofile"
+alias zshrc="~/.zshrc"
 alias aliases="code ~/.aliases"
