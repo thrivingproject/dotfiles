@@ -18,6 +18,7 @@ alias path="echo $PATH | tr ':' '\n'"
 alias ghrd="gh repo delete"
 alias apikey="echo $OPENAI_API_KEY | pbcopy"
 alias brave="open /Applications/Brave\ Browser.app"
+alias mbp="ssh home@192.168.100.99"
 
 # code
 alias dotfiles="code ~/.dotfiles"
