@@ -6,6 +6,7 @@ alias pybuild="rm -rf build dist && python setup.py py2app -A"
 alias pytree="tree -I '__pycache__|dist|build|.git|.DS_Store|.venv' -a"
 alias freeze="pip freeze > requirements.txt"
 alias cgpt="openai api chat.completions.create --stream -m gpt-4 --message user"
+alias tree="tree -I '__pycache__'"
 
 # Django
 alias runserver='python3 manage.py runserver'
@@ -13,14 +14,13 @@ alias makemigrations='python3 manage.py makemigrations'
 alias migrate='python3 manage.py migrate'
 
 # Other
-alias ls="ls -G"
+alias ls="ls -FG"
 alias path="echo $PATH | tr ':' '\n'"
 alias ghrd="gh repo delete"
-alias apikey="echo $OPENAI_API_KEY | pbcopy"
-alias brave="open /Applications/Brave\ Browser.app"
 alias mbp="ssh home@192.168.100.99"
+alias libre="ssh christian@192.168.100.148"
 
 # code
 alias dotfiles="code ~/.dotfiles"
-alias zshrc="~/.zshrc"
 alias aliases="code ~/.aliases"
+alias dev="code ~/dev -r"
