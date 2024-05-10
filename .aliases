@@ -7,6 +7,7 @@ alias pytree="tree -I '__pycache__|dist|build|.git|.DS_Store|.venv' -a"
 alias freeze="pip freeze > requirements.txt"
 alias cgpt="openai api chat.completions.create --stream -m gpt-4 --message user"
 alias tree="tree -I '__pycache__'"
+alias pyv="python3 -V"
 
 # Django
 alias runserver='python3 manage.py runserver'
@@ -15,6 +16,7 @@ alias migrate='python3 manage.py migrate'
 
 # Other
 alias ls="ls -FG"
+alias which="which -a"
 alias path="echo $PATH | tr ':' '\n'"
 alias ghrd="gh repo delete"
 alias mbp="ssh home@192.168.100.99"
@@ -23,4 +25,3 @@ alias libre="ssh christian@192.168.100.148"
 # code
 alias dotfiles="code ~/.dotfiles"
 alias aliases="code ~/.aliases"
-alias dev="code ~/dev -r"
