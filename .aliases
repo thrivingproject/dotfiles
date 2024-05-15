@@ -1,13 +1,14 @@
 # Python
 alias py="python3"
 alias venv="python3 -m venv .venv && source .venv/bin/activate"
-alias venvi="python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt"
+alias venvi="python3 -m venv .venv && source .venv/bin/activate && pip3 install -r requirements.txt"
 alias pybuild="rm -rf build dist && python setup.py py2app -A"
 alias pytree="tree -I '__pycache__|dist|build|.git|.DS_Store|.venv' -a"
 alias freeze="pip freeze > requirements.txt"
 alias cgpt="openai api chat.completions.create --stream -m gpt-4 --message user"
 alias tree="tree -I '__pycache__'"
 alias pyv="python3 -V"
+alias activate="source .venv/bin/activate"
 
 # Django
 alias runserver='python3 manage.py runserver'
@@ -19,8 +20,15 @@ alias ls="ls -FG"
 alias which="which -a"
 alias path="echo $PATH | tr ':' '\n'"
 alias ghrd="gh repo delete"
-alias mbp="ssh home@192.168.100.99"
+alias dots="ls -d .*"
+
+# SSH
+alias pro="ssh home@192.168.100.99"
 alias libre="ssh christian@192.168.100.148"
+alias air="ssh christianisaman@192.168.100.102"
+alias hosts="cat /etc/hosts"
+# alias djangodb="psql --host=libre --dbname=django --username=django"
+alias django="psql -h libre djangotutorial django"
 
 # code
 alias dotfiles="code ~/.dotfiles"
