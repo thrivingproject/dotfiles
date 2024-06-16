@@ -27,8 +27,6 @@ alias pro="ssh home@192.168.100.99"
 alias libre="ssh christian@192.168.100.148"
 alias air="ssh christianisaman@192.168.100.102"
 alias hosts="cat /etc/hosts"
-# alias djangodb="psql --host=libre --dbname=django --username=django"
-alias django="psql -h libre djangotutorial django"
 
 # code
 alias dotfiles="code ~/.dotfiles"
