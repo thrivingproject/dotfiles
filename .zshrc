@@ -103,6 +103,7 @@ if [ -f ~/.aliases ]; then
     source ~/.aliases
 fi
 
+export PATH=$PATH:~/scripts
 
 # pyenv
 if command -v pyenv 1>/dev/null 2>&1; then
