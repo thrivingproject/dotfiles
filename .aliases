@@ -18,7 +18,7 @@ alias migrate='python3 manage.py migrate'
 # Other
 alias ls="ls -FG"
 alias which="which -a"
-alias path="echo $PATH | tr ':' '\n'"
+alias path="python -c \"import os; path = os.environ['PATH'].split(':'); print('\n'.join(path))\""
 alias ghrd="gh repo delete"
 alias dots="ls -d .*"
 
