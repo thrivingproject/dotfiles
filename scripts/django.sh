@@ -107,9 +107,9 @@ py manage.py createsuperuser
 
 ## Next steps
 
-1. Add \`dirapp\` and \`django.contrib.admindocs\` to the \`INSTALLED_APPS\` list in \`dir/settings.py\`
-2. Add \`path('admin/doc/', include('django.contrib.admindocs.urls'))\` to urlpatterns in \`dir/urls.py\`. Make sure it’s included before the \`'admin/'\` entry, so that requests to \`/admin/doc/\` don’t get handled by the latter entry.
-3. Add path for \`dirapp\` URLs to \`dir/urls.py\`" > README.md
+1. Add \`$1app\` and \`django.contrib.admindocs\` to the \`INSTALLED_APPS\` list in \`$1/settings.py\`
+2. Add \`path('admin/doc/', include('django.contrib.admindocs.urls'))\` to urlpatterns in \`$1/urls.py\`. Make sure it’s included before the \`'admin/'\` entry, so that requests to \`/admin/doc/\` don’t get handled by the latter entry.
+3. Add path for \`$1app\` URLs to \`$1/urls.py\`" > README.md
 
 # Migrate, create superuser, and open in VS Code
 python3 manage.py migrate
