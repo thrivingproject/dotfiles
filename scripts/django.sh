@@ -112,6 +112,6 @@ py manage.py createsuperuser
 3. Add path for \`dirapp\` URLs to \`dir/urls.py\`" > README.md
 
 # Migrate, create superuser, and open in VS Code
-py manage.py migrate
-py manage.py createsuperuser
+python3 manage.py migrate
+python3 manage.py createsuperuser
 code .
