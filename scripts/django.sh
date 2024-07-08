@@ -19,6 +19,10 @@ touch $1app/forms.py
 echo "from django import forms
 " > $1app/forms.py
 
+# statid
+mkdir $1app/static/$1app
+touch $1app/static/$1app/style.css
+
 # urls.py
 touch $1app/urls.py
 echo "from django.urls import path
@@ -35,10 +39,13 @@ mkdir $1app/templates
 mkdir $1app/templates/$1app
 touch $1app/templates/template.html
 echo "<!DOCTYPE html>
+{% load static %}
 <html lang=\"en\">
   <head>
     <meta charset=\"UTF-8\" />
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />
+    <link rel=\"stylesheet\" href=\"https://unpkg.com/mvp.css\">
+    <link rel=\"stylesheet\" href=\"{% static '$1app/style.css' %}\">
     <title>{% block title %}{% endblock %}</title>
   </head>
   <body>
