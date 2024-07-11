@@ -117,6 +117,8 @@ py manage.py createsuperuser
 1. Add \`$1app\` and \`django.contrib.admindocs\` to the \`INSTALLED_APPS\` list in [$1/settings.py]($1/settings.py)
 2. Add \`path('admin/doc/', include('django.contrib.admindocs.urls'))\` to URLPATTERNS in [$1/urls.py]($1/urls.py). Make sure it’s included before the \`'admin/'\` entry, so that requests to \`/admin/doc/\` don’t get handled by the latter entry.
 3. Add path for \`$1app\` URLs to [$1/urls.py]($1/urls.py)" > README.md
+4. Register the app in the project settings.py file
+5. Regist models in the app admin.py file
 
 # Migrate, create superuser, and open in VS Code
 python3 manage.py migrate
