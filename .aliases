@@ -21,6 +21,7 @@ alias which="which -a"
 alias path="python -c \"import os; path = os.environ['PATH'].split(':'); print('\n'.join(path))\""
 alias ghrd="gh repo delete"
 alias dots="ls -d .*"
+alias runc="cc main.c && ./a.out"
 
 # SSH
 alias pro="ssh home@192.168.100.99"
