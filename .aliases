@@ -22,6 +22,7 @@ alias path="python -c \"import os; path = os.environ['PATH'].split(':'); print('
 alias ghrd="gh repo delete"
 alias dots="ls -d .*"
 alias runc="cc main.c && ./a.out"
+alias submit="rm -rf .git* .venv && find . \( -name "__pycache__" -o -name ".DS_Store" \) -exec rm -rf {} +"
 
 # SSH
 alias pro="ssh home@192.168.100.99"
