@@ -12,8 +12,10 @@ alias activate="source .venv/bin/activate"
 
 # Django
 alias runserver='python3 manage.py runserver'
+alias runs=runserver
 alias makemigrations='python3 manage.py makemigrations'
 alias migrate='python3 manage.py migrate'
+alias manage='python3 manage.py'
 
 # Other
 alias ls="ls -FG"
@@ -22,11 +24,11 @@ alias path="python -c \"import os; path = os.environ['PATH'].split(':'); print('
 alias ghrd="gh repo delete"
 alias dots="ls -d .*"
 alias runc="cc main.c && ./a.out"
-alias submit="rm -rf .git* .venv && find . \( -name "__pycache__" -o -name ".DS_Store" \) -exec rm -rf {} +"
+alias submit="rm -rf .git* .venv db.sqlite3 && find . \( -name "__pycache__" -o -name ".DS_Store" \) -exec rm -rf {} +"
 
 # SSH
 alias pro="ssh home@192.168.100.99"
-alias libre="ssh christian@192.168.100.148"
+alias libre="ssh christian@libre"
 alias air="ssh christianisaman@192.168.100.102"
 alias hosts="cat /etc/hosts"
 
